@@ -28,7 +28,7 @@ const EmailVerification = () => {
           throw new Error(data.message || 'Verification failed');
         }
 
-        // Erfolgreiche Verifizierung
+        // Successful verification
         setTimeout(() => {
           navigate('/login');
         }, 3000);

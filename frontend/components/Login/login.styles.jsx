@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const RegistrationContainer = styled.div`
+export const LoginContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@ export const RegistrationContainer = styled.div`
   background-color: #f5f5f5;
 `;
 
-export const RegistrationForm = styled.form`
+export const LoginForm = styled.form`
   background: white;
   padding: 2rem;
   border-radius: 8px;
@@ -81,7 +81,7 @@ export const ErrorMessage = styled.div`
   border-radius: 4px;
 `;
 
-export const LoginLink = styled(Link)`
+export const RegisterLink = styled(Link)`
   display: block;
   text-align: center;
   margin-top: 1rem;
