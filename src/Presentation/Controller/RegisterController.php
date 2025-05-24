@@ -54,6 +54,12 @@ class RegisterController extends AbstractController
         ]);
     }
 
+    #[Route('/registration-confirmed', name: 'app_registration_confirmed')]
+    public function registrationConfirmed(): Response
+    {
+        return $this->render('registration/index.html.twig');
+    }
+
     #[Route('/api/verify-email/{token}', name: 'app_verify_email', methods: ['GET'])]
     public function verifyEmail(string $token): JsonResponse
     {
