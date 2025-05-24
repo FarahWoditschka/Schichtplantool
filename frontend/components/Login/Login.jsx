@@ -46,7 +46,7 @@ const Login = () => {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.message || 'Login failed');
+        throw setError(data.message || 'Login failed');
       }
 
       // Store token and user data

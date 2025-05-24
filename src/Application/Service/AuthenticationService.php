@@ -65,7 +65,6 @@ final class AuthenticationService
                 'email' => $user->getEmail(),
                 'roles' => $user->getRoles()
             ],
-            'redirect' => $this->urlGenerator->generate('app_dashboard')
         ]);
     }
 }   
